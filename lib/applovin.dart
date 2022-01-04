@@ -14,7 +14,7 @@ enum AppLovinAdListener {
   adFailedToDisplay
 }
 
-typedef AppLovinListener(AppLovinAdListener listener);
+typedef AppLovinListener(AppLovinAdListener? listener);
 
 class AppLovin {
   static final MethodChannel _channel = MethodChannel('AppLovin');

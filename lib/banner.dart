@@ -29,13 +29,13 @@ class BannerView extends StatelessWidget {
   };
   final BannerAdSize size;
 
-  BannerView(this.listener, this.size, {Key key}) : super(key: key);
+  BannerView(this.listener, this.size, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: this.sizesNum[this.size].width,
-      height: this.sizesNum[this.size].height,
+      width: this.sizesNum[this.size]!.width,
+      height: this.sizesNum[this.size]!.height,
       child: AndroidView(
         viewType: '/Banner',
         key: UniqueKey(),
