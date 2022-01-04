@@ -11,7 +11,14 @@ enum AppLovinAdListener {
   adOpenedFullscreen,
   adClosedFullscreen,
   adLeftApplication,
-  adFailedToDisplay
+  adFailedToDisplay,
+  videoPlaybackBegan,
+  videoPlaybackEnded,
+  userDeclinedToViewAd,
+  validationRequestFailed,
+  userRewardRejected,
+  userOverQuota,
+  userRewardVerified
 }
 
 typedef AppLovinListener(AppLovinAdListener? listener);
@@ -28,6 +35,13 @@ class AppLovin {
     'AdClosedFullscreen': AppLovinAdListener.adClosedFullscreen,
     'AdLeftApplication': AppLovinAdListener.adLeftApplication,
     'AdFailedToDisplay': AppLovinAdListener.adFailedToDisplay,
+    'VideoPlaybackBegan': AppLovinAdListener.videoPlaybackBegan,
+    'VideoPlaybackEnded': AppLovinAdListener.videoPlaybackEnded,
+    'UserDeclinedToViewAd': AppLovinAdListener.userDeclinedToViewAd,
+    'ValidationRequestFailed': AppLovinAdListener.validationRequestFailed,
+    'UserRewardRejected': AppLovinAdListener.userRewardRejected,
+    'UserOverQuota': AppLovinAdListener.userOverQuota,
+    'UserRewardVerified': AppLovinAdListener.userRewardVerified,
   };
 
   static Future<void> init() async {
