@@ -68,10 +68,10 @@ public class RewardedVideo implements AppLovinAdLoadListener, AppLovinAdRewardLi
         ApplovinPlugin.getInstance().Callback("ValidationRequestFailed");
     }
 
-    @Override
+    /*@Override
     public void userDeclinedToViewAd(AppLovinAd ad) {
         ApplovinPlugin.getInstance().Callback("UserDeclinedToViewAd");
-    }
+    }*/
 
     @Override
     public void videoPlaybackBegan(AppLovinAd ad) {
